@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "428473323891",
+    "firebase_url": "https://siyaram-jewels.firebaseio.com",
+    "project_id": "siyaram-jewels",
+    "storage_bucket": "siyaram-jewels.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428473323891:android:ca5a26c07869c3ee",
+        "android_client_info": {
+          "package_name": "approch.siaram.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428473323891-ja3i27i0i48t8m7jfmvoa8jaf0trmng6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM5Uyj5HzJm-M5SytbQQ88Kb_zlRykXGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428473323891-ja3i27i0i48t8m7jfmvoa8jaf0trmng6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
