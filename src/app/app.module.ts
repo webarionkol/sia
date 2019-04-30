@@ -24,6 +24,10 @@ import { AdvmodPage } from '../pages/advmod/advmod';
 import { AboutdetlsPage } from '../pages/aboutdetls/aboutdetls';
 import { TermsPage } from '../pages/terms/terms';
 import { MeetteamPage } from '../pages/meetteam/meetteam';
+import { CategoryPage } from '../pages/category/category';
+import { SubCategoryPage } from '../pages/sub-category/sub-category';
+import { ProductPage } from '../pages/product/product';
+import { ProductDetailsPage } from '../pages/product-details/product-details';
 
 import { SelectSearchableModule } from 'ionic-select-searchable';
 
@@ -52,8 +56,16 @@ import { RestProvider } from '../providers/rest/rest';
     EventlistPage,
     AdvmodPage,
     MeetteamPage,
-
-    AlertPage,AboutusPage,EventPage,BankPage,ContactPage
+    AlertPage,
+    AboutusPage,
+    EventPage,
+    BankPage,
+    ContactPage,
+    CategoryPage,
+    SubCategoryPage,
+    ProductPage,
+    ProductDetailsPage
+    
   ],
   imports: [
     BrowserModule,
@@ -74,11 +86,17 @@ import { RestProvider } from '../providers/rest/rest';
     EventlistPage,
     AboutappPage,
     AboutdetlsPage,
-
     TermsPage,
     LoginregPage,
-
-    AlertPage,AboutusPage,EventPage,BankPage,ContactPage
+    CategoryPage,
+    AlertPage,
+    AboutusPage,
+    EventPage,
+    BankPage,
+    ContactPage,
+    SubCategoryPage,
+    ProductPage,
+    ProductDetailsPage
   ],
   providers: [
     StatusBar,

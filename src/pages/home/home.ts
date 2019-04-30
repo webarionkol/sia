@@ -5,6 +5,7 @@ import { ApiProvider } from '../../providers/api/api';
 import { AdvmodPage } from '../advmod/advmod';
 import { EventPage } from '../event/event';
 import { NewsPage } from '../news/news';
+import { CategoryPage } from '../category/category';
 
 @Component({
   selector: 'page-home',
@@ -123,5 +124,8 @@ export class HomePage {
   }
   cal(){
     this.navCtrl.push(EventPage)
+  }
+  categoryPage(){
+    this.navCtrl.push(CategoryPage)
   }
 }

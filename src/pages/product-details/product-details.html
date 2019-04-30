@@ -1,0 +1,68 @@
+<!--
+  Generated template for the ProductDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>   -->
+<ion-header>
+  <ion-navbar>
+    <ion-title> </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+ <div class="image">
+  <ion-slides pager="true" slidesPerView="1">
+    <ion-slide class="sli">
+      <img src="assets/imgs/background1.jpg" />
+    </ion-slide>
+    <!-- <ion-slide class="sli">
+      <img src="{{product.imgurl}}" onError="this.src='assets/imgs/rectangle_2.png'" />
+    </ion-slide>
+    <ion-slide class="sli">
+      <img src="{{product.imgurl}}" onError="this.src='assets/imgs/rectangle_2.png'" />
+    </ion-slide> -->
+  </ion-slides>
+ </div>
+<div class="name" *ngIf="type">
+  <ion-row>
+    <ion-col col-6>
+        <h4 class="name1">Product 1</h4>
+        <p class="code">ZSERF</p>
+    </ion-col>
+    <ion-col col-6 class="price">
+        <!-- <p *ngIf="type == 'RSP'" class="cutamount"> &#8377; {{product.rsp}}</p>
+        <p *ngIf="type == 'MRP'" class="cutamount">&#8377; {{product.mrp}}</p> -->
+
+        <h4 class="amount">&#8377; 500</h4>
+
+    </ion-col>
+  </ion-row>
+
+</div>
+<div class="name">
+  <ion-row>
+    <ion-col>
+      <h4>
+          Details
+      </h4>
+      <p style="color: #7d7d7d;">
+        <strong>Category: </strong> Category
+      </p>
+      <p style="color: #7d7d7d;">
+          <strong>Neck: </strong> Neck
+        </p>
+        <p style="color: #7d7d7d;">
+            <strong>Section: </strong> Section
+          </p>
+    </ion-col>
+  </ion-row>
+ 
+</div>
+
+
+</ion-content>
+

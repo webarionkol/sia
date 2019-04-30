@@ -1,0 +1,19 @@
+page-product {
+    .pins{
+        column-count: 2;
+    }
+    .pin{
+        display: inline-block;  
+        margin: -2px 0px 0px 1px;
+        padding: 0px;
+        width:100%;
+        position: relative;
+        img{
+            border-radius: 10px
+        }
+
+    }
+    .size{
+        float: right;
+    }
+}

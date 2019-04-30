@@ -16,6 +16,7 @@ import { AboutappPage } from '../pages/aboutapp/aboutapp';
 
 import { LoginPage } from '../pages/login/login';
 import { OtpPage } from '../pages/otp/otp';
+import { CategoryPage } from '../pages/category/category';
 
 // import { Network } from '@ionic-native/network/ngx';
 @Component({
@@ -44,6 +45,7 @@ export class MyApp {
       // { title: 'Kyc Form', component: KycformPage, icon: 'ios-document' },
       { title: 'Events', component: EventPage, icon: 'ios-calendar-outline' },
       // { title: 'Analysis', component: AlertPage, icon: 'ios-funnel-outline' },
+      { title: 'Category', component: CategoryPage, icon: 'ios-help-buoy' },
       { title: 'News & Notification', component:NewsPage, icon: 'ios-notifications-outline' },
       { title: 'Bank Details', component: BankPage, icon: 'ios-paper-outline' },
       { title: 'Booking Details', component: ContactPage, icon: 'ios-call-outline' },

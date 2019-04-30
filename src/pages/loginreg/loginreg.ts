@@ -34,7 +34,9 @@ export class LoginregPage {
     this.rest.signIn(this.mobile).then((data:any)=>{
       localStorage.setItem('UserData', JSON.stringify(data.user_data));
 
-      this.navCtrl.push(HomePage, {data: data.user_data});
+     //this.navCtrl.push(HomePage, {data: data.user_data});
+      this.navCtrl.setRoot(HomePage, {data: data.user_data});
+
       // this.navCtrl.push(OtpagainPage)
     }).catch(err=>{
       alert(JSON.stringify(err['error'].msg))
