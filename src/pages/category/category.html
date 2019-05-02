@@ -6,67 +6,38 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>category</ion-title>
+  <ion-navbar color="header">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Category</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
+<ion-content padding>
 
 
   <ion-list>
-    <ion-item nav-clear menu-close (click)="goToSubcat()">
-      <div class="row">
-        <div class="col-md-4" col-4>
-          <img src="assets/imgs/background1.jpg">
-        </div>
-        <div class="col-md-8 middle" col-8>
-          Menu1
-        </div>
-      </div>
+    <ion-item  (click)="goToSubcat()">
+        <ion-avatar item-start>
+            <img src="assets/imgs/background1.jpg">
+          </ion-avatar>
+          <h2>Cher</h2>
+          <p>Ugh. As if.</p>
+   
     </ion-item>
-    <ion-item nav-clear menu-close (click)="goToSubcat()">
-      <div class="row">
-        <div class="col-md-4" col-4>
-          <img src="assets/imgs/background1.jpg">
-        </div>
-        <div class="col-md-8 middle" col-8>
-          Menu1
-        </div>
-      </div>
+
+    <ion-item  (click)="goToSubcat()">
+        <ion-avatar item-start>
+            <img src="assets/imgs/background1.jpg">
+          </ion-avatar>
+          <h2>Cher</h2>
+          <p>Ugh. As if.</p>
+   
     </ion-item>
-    <ion-item nav-clear menu-close (click)="goToSubcat()">
-      <div class="row">
-        <div class="col-md-4" col-4>
-          <img src="assets/imgs/background1.jpg">
-        </div>
-        <div class="col-md-8 middle" col-8>
-          Menu1
-        </div>
-      </div>
-    </ion-item>
-    <ion-item nav-clear menu-close (click)="goToSubcat()">
-      <div class="row">
-        <div class="col-md-4" col-4>
-          <img src="assets/imgs/background1.jpg">
-        </div>
-        <div class="col-md-8 middle" col-8>
-          Menu1
-        </div>
-      </div>
-    </ion-item>
-    <ion-item nav-clear menu-close (click)="goToSubcat()">
-      <div class="row">
-        <div class="col-md-4" col-4>
-          <img src="assets/imgs/background1.jpg">
-        </div>
-        <div class="col-md-8 middle" col-8>
-          Menu1
-        </div>
-      </div>
-    </ion-item>
+  
   </ion-list>
 
 

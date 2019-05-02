@@ -2,7 +2,7 @@ page-home {
   .banner{
    text-align: center;
   
-    // background: rgb(56, 49, 49);
+    
     img{
       width: 100%;
       height: 200px;
@@ -35,7 +35,7 @@ page-home {
   }
   #rowt{
     background: #f5f2ed;
-    padding:1%;
+    
     color:#000000;
     margin-bottom: 3%;
   }
@@ -62,13 +62,13 @@ page-home {
   }
   .tab{
     width: 20%;
-    padding: 10px;
+    padding: 5px;
     float: left;
     background-color: #ffb53d;
   }
   .table{
     width: 80%;
-    padding: 10px;
+    padding: 5px;
     float: right;
   }
   .yup{
@@ -78,18 +78,46 @@ page-home {
    font-size: 12px;
  }
  #tablep{
+  -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+-moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
    margin-bottom: 2%;
   //  border:0.5px solid rgb(184, 180, 180);
 
  }
+
+ #rowt{
+  -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+  box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+ }
+ #tabhed{
+   margin-top: 3%;
+   margin-bottom: 1%;
+  background-color: #c4a76e;
+ }
  .input-wrapper{
   // border:0.5px solid rgb(184, 180, 180);
  }
- .row{
+ #rowo{
+  -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+  box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
   // border:0.5px solid rgb(184, 180, 180);
  }
- [col-6] ion-icon{
-   font-size: 80px;
-   color: #cda368;
+ [col-6] 
+ p{
+   background-color: #c4a76e;
+   margin:0px;
+   padding:5px;
+   color:black;
+
+
  }
+ img{
+  background-color: white !important;
+}
+.col{
+  padding: 4px;
+}
 }

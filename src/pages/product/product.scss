@@ -1,19 +1,39 @@
 page-product {
-    .pins{
-        column-count: 2;
+    ion-content{
+        background-image: url('../assets/imgs/background.jpg');
+      background-size: cover;
     }
-    .pin{
-        display: inline-block;  
-        margin: -2px 0px 0px 1px;
-        padding: 0px;
-        width:100%;
-        position: relative;
-        img{
-            border-radius: 10px
-        }
 
+    [col-6] {
+        
+    p{
+      background-color: #c4a76e;
+      margin:0px;
+      padding:5px;
+      color:black;
+
+      -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+      -moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+      box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+   
+   
     }
-    .size{
-        float: right;
-    }
+    img{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+        -moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+        box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+     background-color: white !important;
+        height: 150px;
+        width: 170px;
+        object-fit: cover;
+   }
+   .col{
+    
+   
+   }
+}
 }

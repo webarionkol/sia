@@ -3,7 +3,10 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>SIYARAM JEWELS</ion-title>
+        <ion-title text-center><b>SIYA RAM JEWELS</b></ion-title>
+        <ion-buttons right (click)="login()" >
+            <button ion-button icon-only color="light" ><ion-icon name="ios-contact"></ion-icon></button>
+          </ion-buttons >
     </ion-navbar>
 </ion-header>
 <ion-content>
@@ -44,24 +47,7 @@
                 {{ sum(metal_cost.gold_selling, metals.rows[0].High) }}</ion-col>
 
         </ion-row>
-        <!--         
-           <ion-row text-center >
-              <ion-col col-12 id="tabhed" ><b>SILVER KOLKATA DELIVERY</b></ion-col>
-          </ion-row>
-        
-        <ion-row text-center id="rowo">
-            <ion-col col-3>BUY</ion-col>
-            <ion-col col-3>SELL</ion-col>
-            <ion-col col-3>Low</ion-col>
-            <ion-col col-3>High</ion-col>
-         </ion-row>
-         <ion-row text-center id="rowt" *ngIf="metal_cost && metals && old">
-            <ion-col col-3  [ngClass]="{'red-bkg': (0 > sum(metal_cost.silver_cost, old.rows[1].Bid)-(sum(metal_cost.silver_cost, metals.rows[1].Bid))), 'green-bkg': (sum(metal_cost.silver_cost, old.rows[1].Bid)-(sum(metal_cost.silver_cost, metals.rows[1].Bid)) > 0)}"><b>{{ sum(metal_cost.silver_cost, metals.rows[1].Bid) }}</b></ion-col>
-              <ion-col col-3  [ngClass]="{'red-bkg': (0 > sum(metal_cost.silver_selling, old.rows[1].Ask)-(sum(metal_cost.silver_selling, metals.rows[1].Ask))), 'green-bkg': (sum(metal_cost.silver_cost, old.rows[1].Ask)-(sum(metal_cost.silver_cost, metals.rows[1].Ask)) > 0)}">{{ sum(metal_cost.silver_selling, metals.rows[1].Ask) }}</ion-col>
-              <ion-col col-3  [ngClass]="{'red-bkg': (0 > sum(metal_cost.silver_cost, old.rows[1].Low)-(sum(metal_cost.silver_cost, metals.rows[1].Low))), 'green-bkg': (sum(metal_cost.silver_cost, old.rows[1].Low)-(sum(metal_cost.silver_cost, metals.rows[1].Low)) > 0)}">{{ sum(metal_cost.silver_cost, metals.rows[1].Low) }}</ion-col>
-              <ion-col col-3   [ngClass]="{'red-bkg': (0 > sum(metal_cost.silver_selling, old.rows[1].High)-(sum(metal_cost.silver_selling, metals.rows[1].High))), 'green-bkg': (sum(metal_cost.silver_cost, old.rows[1].High)-(sum(metal_cost.silver_cost, metals.rows[1].High)) > 0)}">{{ sum(metal_cost.silver_selling, metals.rows[1].High) }}</ion-col>
-         </ion-row> -->
-
+      
 
 
         <ion-row *ngIf="metals && old" id="tablep">
@@ -340,21 +326,21 @@
         <ion-row text-center>
         
             <ion-col col-6 (click)="categoryPage()">
-                <ion-icon name="apps"></ion-icon>
+               <img src="assets/imgs/mani.jpg">
                 <p>Products</p>
             </ion-col>
             <ion-col col-6 (click)="noti()">
-                <ion-icon name="notifications"></ion-icon>
+                <img src="assets/imgs/noti.png">
                 <p>Notifications</p>
 
             </ion-col>
             <ion-col col-6 (click)="cal()">
-                <ion-icon name="ios-calendar"></ion-icon>
+                <img src="assets/imgs/event.jpg">
                 <p>Events</p>
             </ion-col>
             <ion-col col-6 >
                     <a href="https://wa.me/+91{{whatsapp}}/?text=Hi, need help">
-                    <ion-icon name="logo-whatsapp"></ion-icon>
+                        <img src="assets/imgs/whats.png">
                     </a>
                  <p>Chat With Us</p>
             </ion-col>

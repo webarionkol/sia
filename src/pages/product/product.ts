@@ -9,7 +9,7 @@ import { ProductDetailsPage } from '../product-details/product-details';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
 @Component({
   selector: 'page-product',
   templateUrl: 'product.html',

@@ -43,12 +43,13 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage, icon: 'ios-home-outline' },
       // { title: 'Kyc Form', component: KycformPage, icon: 'ios-document' },
+      { title: 'Category', component: CategoryPage, icon: 'ios-help-buoy' },
       { title: 'Events', component: EventPage, icon: 'ios-calendar-outline' },
       // { title: 'Analysis', component: AlertPage, icon: 'ios-funnel-outline' },
-      { title: 'Category', component: CategoryPage, icon: 'ios-help-buoy' },
+      
       { title: 'News & Notification', component:NewsPage, icon: 'ios-notifications-outline' },
-      { title: 'Bank Details', component: BankPage, icon: 'ios-paper-outline' },
-      { title: 'Booking Details', component: ContactPage, icon: 'ios-call-outline' },
+      // { title: 'Bank Details', component: BankPage, icon: 'ios-paper-outline' },
+      // { title: 'Booking Details', component: ContactPage, icon: 'ios-call-outline' },
       { title: 'About Us', component: AboutappPage, icon: 'ios-information-circle-outline' },
       { title: 'About Developer', component: AboutusPage, icon: 'ios-code-working' }
     ];

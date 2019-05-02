@@ -9,7 +9,7 @@ import { SubCategoryPage } from '../sub-category/sub-category';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
 @Component({
   selector: 'page-category',
   templateUrl: 'category.html',
