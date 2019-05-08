@@ -20,7 +20,7 @@ page-home {
 }
 
     [col-12]{
-        padding:10px;
+        padding:2px;
         color:white;
          border: 1px solid #32383e ;
        background: rgba(0, 0, 0, 0.425);
@@ -31,7 +31,8 @@ page-home {
       color:#1b1a1a;
   }
   [col-6]{
-    border:0.5px solid rgb(184, 180, 180);
+    padding: 2px !important;
+    
   }
   #rowt{
     background: #f5f2ed;
@@ -39,41 +40,10 @@ page-home {
     color:#000000;
     margin-bottom: 3%;
   }
-  .head{
-    background: linear-gradient(to right, #cda368 0%, #f5f2ed 100%);
-  }
 
-  .red{
-    color: rgb(240, 22, 22);
-  }
- 
-  .green{
-    color: rgb(8, 187, 8);
-  }
 
-  .red-bkg{
-    color:white;
-    background:radial-gradient(circle, rgba(131,58,180,1) 0%, rgb(232, 19, 19) 0%, rgba(232, 19, 19, 1) 100%, rgba(252,176,69,1) 100%);
-  }
+  
 
-  .green-bkg{
-    color:white;
-    background:radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(79,210,21,1) 0%, rgba(46,136,6,1) 100%, rgba(252,176,69,1) 100%);
-  }
-  .tab{
-    width: 20%;
-    padding: 5px;
-    float: left;
-    background-color: #ffb53d;
-  }
-  .table{
-    width: 80%;
-    padding: 5px;
-    float: right;
-  }
-  .yup{
-    width: 100%;
-  }
  span{
    font-size: 12px;
  }
@@ -94,30 +64,45 @@ box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
  #tabhed{
    margin-top: 3%;
    margin-bottom: 1%;
-  background-color: #c4a76e;
+  background-color: #a07e39;
  }
  .input-wrapper{
   // border:0.5px solid rgb(184, 180, 180);
  }
  #rowo{
-  -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
-  -moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
-  box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
-  // border:0.5px solid rgb(184, 180, 180);
+
  }
- [col-6] 
+ [col-6] {
+
+
  p{
-   background-color: #c4a76e;
+   background-color: #a07e39;
    margin:0px;
    padding:5px;
    color:black;
+
+   text-align: center;
+   -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+   -moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+   box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
 
 
  }
  img{
   background-color: white !important;
+  height: 170px;
+  width: 100%;
+  -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+  box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+  border: #a07e39 solid 1px;
+}
+padding:5px !important;
 }
 .col{
-  padding: 4px;
+ 
+}
+#ssp{
+  font-size: 32px !important;
 }
 }

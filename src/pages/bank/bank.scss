@@ -1,3 +1,29 @@
 page-bank {
-
+    #subha{
+        ion-icon{
+            font-size: 40px !important;
+        }
+    }
+.input-cover{
+   
+    border:1px solid gray;
+     padding: 5px;
+    
+}
+.input-md{
+    margin-top: 5%;
+}
+textarea{
+   
+    text-align: center;
+}
+.text-input-md{
+    padding: 10px;
+}
+img{
+  -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+  box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);  
+  border-radius: 5px;
+}
 }

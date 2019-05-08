@@ -17,6 +17,7 @@ import { AboutappPage } from '../pages/aboutapp/aboutapp';
 import { LoginPage } from '../pages/login/login';
 import { OtpPage } from '../pages/otp/otp';
 import { CategoryPage } from '../pages/category/category';
+import { LiveapiPage } from '../pages/liveapi/liveapi';
 
 // import { Network } from '@ionic-native/network/ngx';
 @Component({
@@ -44,13 +45,16 @@ export class MyApp {
       { title: 'Home', component: HomePage, icon: 'ios-home-outline' },
       // { title: 'Kyc Form', component: KycformPage, icon: 'ios-document' },
       { title: 'Category', component: CategoryPage, icon: 'ios-help-buoy' },
+      { title: 'Live Rate', component: LiveapiPage, icon: 'ios-pulse' },
       { title: 'Events', component: EventPage, icon: 'ios-calendar-outline' },
       // { title: 'Analysis', component: AlertPage, icon: 'ios-funnel-outline' },
       
       { title: 'News & Notification', component:NewsPage, icon: 'ios-notifications-outline' },
       // { title: 'Bank Details', component: BankPage, icon: 'ios-paper-outline' },
       // { title: 'Booking Details', component: ContactPage, icon: 'ios-call-outline' },
+
       { title: 'About Us', component: AboutappPage, icon: 'ios-information-circle-outline' },
+      { title: 'Contect Us', component: ContactPage, icon: 'ios-call-outline' },
       { title: 'About Developer', component: AboutusPage, icon: 'ios-code-working' }
     ];
 

@@ -36,6 +36,7 @@ import { SelectSearchableModule } from 'ionic-select-searchable';
 import { LoginregPage } from '../pages/loginreg/loginreg';
 
 
+import { LiveapiPage } from '../pages/liveapi/liveapi';
 
 import { RestProvider } from '../providers/rest/rest';
 // import { Network } from '@ionic-native/network/ngx';
@@ -45,7 +46,7 @@ import { RestProvider } from '../providers/rest/rest';
     MyApp,
     HomePage,
     LoginregPage,
-   
+    LiveapiPage,
     LoginPage,
     OtpPage,
     ListPage,
@@ -82,6 +83,7 @@ import { RestProvider } from '../providers/rest/rest';
     OtpPage,
     ListPage,
     AdvmodPage,
+    LiveapiPage,
     NewsPage,
     EventlistPage,
     AboutappPage,

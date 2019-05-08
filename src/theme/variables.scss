@@ -39,7 +39,7 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  header:     #cda368
+  header:     #a07e39
 );
 
 
@@ -95,3 +95,5 @@ $colors: (
   body, span, button, h1, h2, h3, h4, h5, h6, p, ion-item, ion-title, ion-col,ion-grid {
   font-family: 'GlobalFont' !important;
   }
+
+  $fab-list-margin	:30px;
