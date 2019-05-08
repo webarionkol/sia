@@ -1,4 +1,8 @@
 page-bank {
+    .col{
+        margin-top: 5%;
+        border:1px solid rgb(153, 131, 7);
+    }
     #subha{
         ion-icon{
             font-size: 40px !important;
@@ -6,7 +10,7 @@ page-bank {
     }
 .input-cover{
    
-    border:1px solid gray;
+    // border:1px solid gray;
      padding: 5px;
     
 }
