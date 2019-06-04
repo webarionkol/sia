@@ -30,7 +30,7 @@ import { ProductPage } from '../pages/product/product';
 import { ProductDetailsPage } from '../pages/product-details/product-details';
 
 import { SelectSearchableModule } from 'ionic-select-searchable';
-
+import { ManufacturePage } from '../pages/manufacture/manufacture';
 // import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
 
 import { LoginregPage } from '../pages/loginreg/loginreg';
@@ -63,6 +63,7 @@ import { RestProvider } from '../providers/rest/rest';
     BankPage,
     ContactPage,
     CategoryPage,
+    ManufacturePage,
     SubCategoryPage,
     ProductPage,
     ProductDetailsPage
@@ -95,6 +96,7 @@ import { RestProvider } from '../providers/rest/rest';
     AboutusPage,
     EventPage,
     BankPage,
+    ManufacturePage,
     ContactPage,
     SubCategoryPage,
     ProductPage,

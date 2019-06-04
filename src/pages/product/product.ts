@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProductDetailsPage } from '../product-details/product-details';
-
+import { ActionSheetController } from 'ionic-angular';
 /**
  * Generated class for the ProductPage page.
  *
@@ -16,7 +16,7 @@ import { ProductDetailsPage } from '../product-details/product-details';
 })
 export class ProductPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public actionSheetCtrl: ActionSheetController,public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -24,5 +24,27 @@ export class ProductPage {
   }
   goToProduct(){
     this.navCtrl.push(ProductDetailsPage)
+  }
+  presentActionSheet() {
+    const actionSheet = this.actionSheetCtrl.create({
+      title: 'Sort and Filter',
+      buttons: [
+        {
+          text: 'Manufacture',
+          role: 'destructive',
+          handler: () => {
+            console.log('Destructive clicked');
+          }
+        },
+        {
+          text: 'Products',
+          role: 'destructive',
+          handler: () => {
+            console.log('Destructive clicked');
+          }
+        }
+      ]
+    });
+    actionSheet.present();
   }
 }

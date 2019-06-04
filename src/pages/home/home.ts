@@ -122,7 +122,7 @@ export class HomePage {
 
    }
   noti(){
-   this.navCtrl.push(BankPage)
+   this.navCtrl.push(AdvmodPage)
   }
   live(){
     this.navCtrl.push(LiveapiPage)

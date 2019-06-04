@@ -1,5 +1,45 @@
 page-contact {
-    .card-header-md-dark, .card-title-md-dark, .card-content-md-dark{
-        background-color: gainsboro;
-    }
+  .textarea{
+    margin:10%;
+      .input-cover{
+          border: 1px solid gold;
+          
+          border-radius: 20px;
+          
+          text-align: center;
+          
+
+      }
+  }
+.text-input-md{
+    text-align: center;
+}
+#space{
+
+    margin-top: 10px;
+}
+.input-cover{
+    padding:10px;
+}
+ion-textarea{
+    margin-top: 7%;
+    height: 100px;
+}
+#spac .text-input-md{
+    
+    height: 100px;
+}
+img{
+    width: 40px;
+}
+.call{
+    margin-top: 13%;
+}
+[col-4]{
+    text-align: center;
+  ion-icon{
+     
+      font-size: 30px;
+  }
+}
 }

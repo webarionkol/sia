@@ -21,15 +21,7 @@ export class AdvmodPage {
 
   constructor(public rest:ApiProvider,public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController) {
     
-    this.rest.getAdv().then(data=>{
-      this.imgget=data['ads']
-      console.log(this.imgget[0].banner_img)
-      // Math.floor(Math.random()*this.imgget.length)+1;
-    }).then(data=>{
-      this.img=this.imgget[Math.floor(Math.random()*this.imgget.length)].banner_img
-      console.log(this.img)
-    })
-    
+ 
     
     
      
@@ -41,9 +33,7 @@ export class AdvmodPage {
  
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AdvmodPage');
+    console.log('ionViewDidLoad Customize admoc');
   }
-  dismiss(){
-    this.viewCtrl.dismiss();
-  }
+
 }

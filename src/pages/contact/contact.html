@@ -10,7 +10,7 @@
           <ion-icon name="menu"></ion-icon>
            
         </button>
-        <ion-title >Booking Details</ion-title>
+        <ion-title >Contact Us</ion-title>
    
          
       </ion-navbar>
@@ -18,81 +18,48 @@
 
 
 <ion-content >
-<!-- <img src="https://i1.wp.com/healingartshuntsville.com/wp-content/uploads/2015/08/contact-us-icon.jpg"> -->
+       <h3 text-center> Write a Message </h3>
+       <h1 text-center> Have Any Questions</h1>
+<div class="textarea">
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.8785467446746!2d88.35513741413186!3d22.5836453851771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277b69157302f%3A0x29a1583c4dbeec1!2s3RD+FLOOR%2C+18%2C+Hanspukur+1st+lane%2C+Raja+Katra%2C+Bara+Bazar%2C+Jorasanko%2C+Kolkata%2C+West+Bengal+700007!5e0!3m2!1sen!2sin!4v1548692824789" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-    <ion-card>
-        <ion-card-header text-center color="dark">
-            Bullion Merchant
-          </ion-card-header>
-    </ion-card>
-    <ion-card> <a href="tel:+91{{b1call}}">
-            <button ion-item>
-                <ion-icon name="ios-call-outline" item-start></ion-icon>
-                {{b1call}}
-            </button>
-        </a>
-        </ion-card>
-        <ion-card> <a href="tel:+91{{b2call}}">
-            <button ion-item>
-                <ion-icon name="ios-call-outline" item-start></ion-icon>
-                {{b2call}}
-            </button>
-        </a>
-        </ion-card>
-        <ion-card> <a href="mailto:{{bemail}}">
-                <button ion-item>
-                    <ion-icon name="ios-mail" item-start></ion-icon>
-                    {{bemail}}
-                </button>
-            </a>
-            </ion-card>
-           
-<ion-card padding>
-   
+
+            <ion-input id="space" type="text" placeholder="Your Name"></ion-input>
        
-       <p text-warp>{{baddress}}</p> 
-   
-</ion-card>
 
+            <ion-input id="space" type="text" placeholder="Your Email"></ion-input>
+     
 
+          
+            <ion-textarea padding id="spac" type="text" placeholder="Your Message"></ion-textarea>
+         
+        </div>   
+        
+        <div text-center>
+            <button ion-button color="header" round>Send Message</button>
+        </div>
 
+        <div text-center class="call"> 
+              <img src="https://image.flaticon.com/icons/png/512/21/21520.png">
+              <p><b>Booking Number</b></p>
+              <p>+92474774747</p>
+              <p>+92474774747</p>
+        </div>
+        <div text-center  padding> 
+         Address-737,SAHID KHUDIRAM BOSE SARANI 
+         KOLKATA - 700030
 
+         
+        </div>
 
- 
-<ion-card>
-    <ion-card-header text-center color="dark">
-        Jewellery
-      </ion-card-header>
-</ion-card>
-<ion-card> <a href="tel:+91{{j11call}}">
-        <button ion-item>
-            <ion-icon name="ios-call-outline" item-start></ion-icon>
-            {{j11call}}
-        </button>
-    </a>
-    </ion-card>
-    <ion-card> <a href="tel:+91{{j2call}}">
-        <button ion-item>
-            <ion-icon name="ios-call-outline" item-start></ion-icon>
-            {{j2call}}
-        </button>
-    </a>
-    </ion-card>
-    <ion-card> <a href="mailto:{{jemail}}">
-            <button ion-item>
-                <ion-icon name="ios-mail" item-start></ion-icon>
-                {{jemail}}
-            </button>
-        </a>
-        </ion-card>
-       
-<ion-card padding>
-
-   
-   <p text-warp> {{jaddress}}</p> 
-
-</ion-card>
-
-
+        <ion-row>
+          <ion-col col-4>
+            <ion-icon name="logo-facebook"></ion-icon>
+          </ion-col>
+          <ion-col col-4>
+            <ion-icon name="logo-instagram"></ion-icon>
+          </ion-col>
+          <ion-col col-4>
+            <ion-icon name="mail"></ion-icon>
+          </ion-col>
+        </ion-row>
 </ion-content>

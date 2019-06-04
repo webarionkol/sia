@@ -57,37 +57,34 @@ page-login {
     -webkit-box-shadow: none;
   }
     ion-content{
-  
-        background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/99/20/3257f79dcb6f7d9.jpg');
-        background-repeat: no-repeat;  
-        background-position: 0% 0% ;
-        background-size: 100% 100% ;
+ 
+       
     }
     .item-block {
         // margin: 0px 0px 18px 0px;
-        padding: 0px 3px 0px 3px;
+        // padding: 0px 3px 0px 3px;
         border-radius: 5px;
         text-align: initial;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
+        // display: -webkit-box;
+        // display: -webkit-flex;
+        // display: -ms-flexbox;
         display: flex;
-        overflow: hidden;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+        // overflow: hidden;
+        // -webkit-box-align: center;
+        // -webkit-align-items: center;
+        // -ms-flex-align: center;
+        // align-items: center;
+        // -webkit-box-pack: justify;
+        // -webkit-justify-content: space-between;
+        // -ms-flex-pack: justify;
+        // justify-content: space-between;
         width: 100%;
-        min-height: 4.4rem;
-        border: 0;
-        font-weight: normal;
-        line-height: normal;
-        text-decoration: none;
-        color: inherit;
+        min-height: 4.0rem;
+        // border: 0;
+        // font-weight: normal;
+        // line-height: normal;
+        // text-decoration: none;
+        // color: inherit;
     }
 
     .imgrow{

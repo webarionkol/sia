@@ -9,12 +9,21 @@
       <img class="logo animated rubberBand" src="http://siyaramjewels.com/includes/images/logo.png" />
     </div>
     <div padding>
-     
+     <ion-card>
       <ion-item>
         <ion-input placeholder="Mobile*" type="tel" [(ngModel)]="mobile"></ion-input>
       </ion-item>
+     </ion-card>
 
-     <p text-center style="color:white" (click)="loginagain()">Not a member?<u>Signup here</u>  </p>
+
+     <ion-card>
+      <ion-item>
+        <ion-input placeholder="Password*" type="password" [(ngModel)]="mobile"></ion-input>
+      </ion-item>
+     </ion-card>
+      
+
+     <p text-center style="color:rgb(53, 49, 49)" (click)="loginagain()">Not a member?<u>Signup here</u>  </p>
 
     <div class="regButton" (click)="otp()" >
       <button class="button_example" [disabled]="!mobile" >Login</button>

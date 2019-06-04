@@ -1,0 +1,18 @@
+page-manufacture {
+    ion-content{
+        background-image: url('../assets/imgs/background.jpg');
+      background-size: cover;
+    }
+    .item-md{
+        margin-bottom:10px;
+        border-radius: 5px;
+     background-color: #c4a76e54;
+     -webkit-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+     -moz-box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+     box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.4);
+     color: rgb(44, 43, 43);
+     p{
+        color: rgb(44, 43, 43); 
+     }
+    }
+}

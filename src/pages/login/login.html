@@ -22,9 +22,13 @@
                 </div>
             </ng-container>
         </div>
-      <ion-item>
-        <ion-input placeholder="Name*" formControlName="name"></ion-input>
-      </ion-item>
+        <ion-card>
+          <ion-item>
+            <ion-input placeholder="Name*" formControlName="name"></ion-input>
+          </ion-item>
+        </ion-card>
+
+    
 
       <div class="validation-errors">
           <ng-container *ngFor="let validation of validation_messages.firmName">
@@ -33,9 +37,12 @@
               </div>
           </ng-container>
       </div>
-      <ion-item>
-        <ion-input placeholder="Firm Name*" formControlName="firmName"></ion-input>
-      </ion-item>
+      <ion-card>
+        <ion-item>
+          <ion-input placeholder="Firm Name*" formControlName="firmName"></ion-input>
+        </ion-item>
+      </ion-card>
+   
 
       <div class="validation-errors">
           <ng-container *ngFor="let validation of validation_messages.mobile">
@@ -44,9 +51,12 @@
               </div>
           </ng-container>
       </div>
-      <ion-item>
-        <ion-input placeholder="Contact No*" type="tel" formControlName="mobile"></ion-input>
-      </ion-item>
+      <ion-card>
+        <ion-item>
+          <ion-input placeholder="Contact No*" type="tel" formControlName="mobile"></ion-input>
+        </ion-item>
+      </ion-card>
+     
 
       <div class="validation-errors">
           <ng-container *ngFor="let validation of validation_messages.email">
@@ -55,9 +65,12 @@
               </div>
           </ng-container>
       </div>
-      <ion-item>
-        <ion-input placeholder="Email Id" formControlName="email" clearInput></ion-input>
-      </ion-item>
+      <ion-card>
+        <ion-item>
+          <ion-input placeholder="Email Id" formControlName="email" clearInput></ion-input>
+        </ion-item>
+      </ion-card>
+     
 
       <div class="validation-errors">
           <ng-container *ngFor="let validation of validation_messages.state">
@@ -66,21 +79,23 @@
               </div>
           </ng-container>
       </div>
-     
-
+     <ion-card>
       <ion-item no-lines>
-            <ion-label>State*</ion-label>
-            <select-searchable
-                item-content
-                formControlName="state"
-                [(ngModel)]="ports.name" 
-                [items]="ports"
-                itemValueField="id"
-                itemTextField="name"
-                [canSearch]="true"
-               >
-            </select-searchable>
-        </ion-item>
+        <ion-label>State*</ion-label>
+        <select-searchable
+            item-content
+            formControlName="state"
+            [(ngModel)]="ports.name" 
+            [items]="ports"
+            itemValueField="id"
+            itemTextField="name"
+            [canSearch]="true"
+           >
+        </select-searchable>
+    </ion-item>
+     </ion-card>
+
+    
 
         <div class="validation-errors">
                 <ng-container *ngFor="let validation of validation_messages.city">
@@ -89,12 +104,15 @@
                     </div>
                 </ng-container>
             </div>
-      <ion-item *ngIf="ports.name">
+            <ion-card>
+              <ion-item *ngIf="ports.name">
        
-        <ion-input [(ngModel)]="city" formControlName="city" placeholder="City*" ></ion-input>
-      </ion-item>
+                <ion-input [(ngModel)]="city" formControlName="city" placeholder="City*" ></ion-input>
+              </ion-item>
+            </ion-card>
+    
     </div>
-     <p text-center style="color:white" (click)="loginagain()">Already a member?<u>Login here</u>  </p>
+     <p text-center style="color:rgb(44, 42, 42)" (click)="loginagain()">Already a member?<u>Login here</u>  </p>
 
     <div class="regButton">
       <button class="button_example" [disabled]="(!validations_form.valid)" >Register</button>
