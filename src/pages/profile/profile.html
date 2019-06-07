@@ -1,0 +1,112 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="light">
+      <ion-title>
+          <span style="color: rgb(27, 26, 26)">My Profile</span>
+        </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    
+    
+     <ion-item no-lines class="animated rollIn">
+        <ion-label floating>Your Name</ion-label>
+        <ion-input type="text" [(ngModel)]="name" value={{name}}></ion-input>
+      </ion-item>
+      
+      <ion-item no-lines class="animated rollIn">
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text" [(ngModel)]="email" value={{email}}></ion-input>
+      </ion-item>
+
+        <ion-item no-line class="animated rollIn">
+            <ion-label floating>Your Mobile No:</ion-label>
+            <ion-input type="text" [(ngModel)]="mobile" value={{mobile}}></ion-input>
+          </ion-item>
+
+          <ion-item no-lines class="animated rollIn">
+            <ion-label floating>Pan No:</ion-label>
+            <ion-input  no-line type="text" [(ngModel)]="pan" value={{pan}}></ion-input>
+          </ion-item>
+
+          <ion-item no-lines class="animated rollIn">
+              <ion-label floating>Your Address:</ion-label>
+              <ion-input no-lines type="text" [(ngModel)]="address" value={{address}}></ion-input>
+            </ion-item>
+      
+            <ion-item class="animated rollIn">
+                <ion-label floating>Your City:</ion-label>
+                <ion-input type="text" [(ngModel)]="city" value={{city}}></ion-input>
+              </ion-item>
+        
+  
+              <ion-item id="hf" class="animated rollIn">
+                  <ion-label>State</ion-label>
+                  <ion-select [(ngModel)]="state"  >
+                    
+                    <ion-option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</ion-option>
+                    <ion-option value="Andhra Pradesh">Andhra Pradesh</ion-option>
+                    <ion-option value="Arunachal Pradesh">Arunachal Pradesh</ion-option>
+                    <ion-option value="Assam">Assam</ion-option>
+                    <ion-option value="Bihar">Bihar</ion-option>
+                    <ion-option value="Chandigarh">Chandigarh</ion-option>
+                    <ion-option value="Chhattisgarh">Chhattisgarh</ion-option>
+                    <ion-option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</ion-option>
+                    <ion-option value="Daman and Diu">Daman and Diu</ion-option>
+                    <ion-option value="Delhi">Delhi</ion-option>
+                    <ion-option value="Goa">Goa</ion-option>
+                    <ion-option value="Gujarat">Gujarat</ion-option>
+                    <ion-option value="Haryana">Haryana</ion-option>
+                    <ion-option value="Himachal Pradesh">Himachal Pradesh</ion-option>
+                    <ion-option value="Jammu and Kashmir">Jammu and Kashmir</ion-option>
+                    <ion-option value="Jharkhand">Jharkhand</ion-option>
+                    <ion-option value="Karnataka">Karnataka</ion-option>
+                    <ion-option value="Kerala">Kerala</ion-option>
+                    <ion-option value="Lakshadweep">Lakshadweep</ion-option>
+                    <ion-option value="Madhya Pradesh">Madhya Pradesh</ion-option>
+                    <ion-option value="Maharashtra">Maharashtra</ion-option>
+                    <ion-option value="Manipur">Manipur</ion-option>
+                    <ion-option value="Meghalaya">Meghalaya</ion-option>
+                    <ion-option value="Mizoram">Mizoram</ion-option>
+                    <ion-option value="Nagaland">Nagaland</ion-option>
+                    <ion-option value="Orissa">Orissa</ion-option>
+                    <ion-option value="Pondicherry">Pondicherry</ion-option>
+                    <ion-option value="Punjab">Punjab</ion-option>
+                    <ion-option value="Rajasthan">Rajasthan</ion-option>
+                    <ion-option value="Sikkim">Sikkim</ion-option>
+                    <ion-option value="Tamil Nadu">Tamil Nadu</ion-option>
+                    <ion-option value="Tripura">Tripura</ion-option>
+                    <ion-option value="Uttaranchal">Uttaranchal</ion-option>
+                    <ion-option value="Uttar Pradesh">Uttar Pradesh</ion-option>
+                    <ion-option value="West Bengal">West Bengal</ion-option>
+                  </ion-select>
+              </ion-item>
+          
+
+
+    
+                <ion-item class="animated rollIn">
+                    <ion-label floating>Your Pincode:</ion-label>
+                    <ion-input type="tel" [(ngModel)]="pincode" value={{pincode}}></ion-input>
+                  </ion-item>
+        
+           
+                <button  id ="sd"ion-button icon-only (click)="updateProfile()" block >Update</button>
+                <button id ="dd" ion-button icon-only (click)="logout()" block >Logout</button>
+             
+          
+    
+        
+    
+    
+    </ion-content>
+    

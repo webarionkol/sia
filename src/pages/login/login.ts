@@ -27,7 +27,7 @@ validations_form: FormGroup;
 
   state:any;
   city:any;
-
+  password : any;
   loading:any;
   ports: any=[];
   port: any=[];
@@ -83,11 +83,7 @@ validations_form: FormGroup;
   
   
   ];
-    // this.api.getStateCity().then((data:any) => {
-    //   console.log(data);
-    //   this.states  = data.states;
-    //   this.cities  = data.city;
-    // });
+
 
   }
 
@@ -121,8 +117,11 @@ validations_form: FormGroup;
         Validators.required,
         Validators.pattern('^[0-9]{10}$')
       ])),
+      password: new FormControl('',Validators.required),
+      address: new FormControl('',Validators.required),
       state: new FormControl('', Validators.required),
-      city: new FormControl('', Validators.required)
+      city: new FormControl('', Validators.required),
+      pincode:new FormControl('', Validators.required),
     },
 
     );
@@ -144,9 +143,20 @@ validations_form: FormGroup;
     'state': [
       { type: 'required', message: 'Please Select your state.' }
     ],
+    'password': [
+      { type: 'required', message: 'Password is required.' },
+     
+    ],
+    'address': [
+      { type: 'required', message: 'Please Select your address.' }
+    ],
     'city': [
       { type: 'required', message: 'Please Select your city.' }
-    ]
+    ],
+    'pincode': [
+      { type: 'required', message: 'Please Select your Postcode.' }
+    ],
+
   };
 
   onSubmit(values) {

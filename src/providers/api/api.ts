@@ -111,13 +111,9 @@ export class ApiProvider {
     });
   }
   signIn(data){
-    var formData = new FormData();
-    formData.append('mobile', data);
-   
-    console.log(data);
-   // console.log(formData);
+
     return new Promise((resolve, reject) => {
-      this.http.post(this.apiUrl+'signIn', formData)
+      this.http.post(this.apiUrl+'signIn', data)
         .subscribe(res => {
           resolve(res);
         }, (err) => {
@@ -132,8 +128,11 @@ export class ApiProvider {
     formData.append('firm_name', data.firmName);
     formData.append('mobile', data.mobile);
     formData.append('email', data.email);
+    formData.append('password', data.password);
     formData.append('city', data.city);
     formData.append('state', data.state);
+    formData.append('pin_code', data.pincode);
+    formData.append('address', data.address);
     console.log(data);
    // console.log(formData);
     return new Promise((resolve, reject) => {

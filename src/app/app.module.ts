@@ -37,7 +37,7 @@ import { LoginregPage } from '../pages/loginreg/loginreg';
 
 
 import { LiveapiPage } from '../pages/liveapi/liveapi';
-
+import { ProfilePage } from '../pages/profile/profile';
 import { RestProvider } from '../providers/rest/rest';
 // import { Network } from '@ionic-native/network/ngx';
 
@@ -66,7 +66,8 @@ import { RestProvider } from '../providers/rest/rest';
     ManufacturePage,
     SubCategoryPage,
     ProductPage,
-    ProductDetailsPage
+    ProductDetailsPage,
+    ProfilePage
     
   ],
   imports: [
@@ -100,7 +101,8 @@ import { RestProvider } from '../providers/rest/rest';
     ContactPage,
     SubCategoryPage,
     ProductPage,
-    ProductDetailsPage
+    ProductDetailsPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,

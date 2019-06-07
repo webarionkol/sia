@@ -20,6 +20,7 @@ import { HomePage } from '../home/home';
 })
 export class LoginregPage {
   mobile:any;
+  password : any;
   constructor(public rest:ApiProvider,public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -30,16 +31,20 @@ export class LoginregPage {
     this.navCtrl.setRoot(LoginPage)
   }
   otp(){
-
-    this.rest.signIn(this.mobile).then((data:any)=>{
+    var formData = new FormData();
+    formData.append('mobile', this.mobile);
+    formData.append('password',this.password)
+    this.rest.signIn(formData).then((data:any)=>{
       localStorage.setItem('UserData', JSON.stringify(data.user_data));
-
+ console.log(data)
      //this.navCtrl.push(HomePage, {data: data.user_data});
-      this.navCtrl.setRoot(HomePage, {data: data.user_data});
+      // this.navCtrl.setRoot(HomePage, {data: data.user_data});
 
       // this.navCtrl.push(OtpagainPage)
     }).catch(err=>{
       alert(JSON.stringify(err['error'].msg))
+    }).then(()=>{
+      this.navCtrl.setRoot(HomePage);
     })
    
   }

@@ -149,4 +149,7 @@ page-login {
     .validation-errors{
       color: red;
     }
+    .item-input .label-md, .item-select .label-md, .item-datetime .label-md{
+      height: 20px;
+    }
 }

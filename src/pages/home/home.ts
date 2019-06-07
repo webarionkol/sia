@@ -8,6 +8,7 @@ import { NewsPage } from '../news/news';
 import { CategoryPage } from '../category/category';
 import { LiveapiPage } from '../liveapi/liveapi';
 import { BankPage } from '../bank/bank';
+import { ProfilePage } from '../profile/profile';
 
 @Component({
   selector: 'page-home',
@@ -33,8 +34,6 @@ export class HomePage {
     public loadingCtrl:LoadingController,public platform:Platform ) 
   {
 
-    document.addEventListener("pause", this.onPause, false);
-    document.addEventListener("resume", this.onResume, false);
     let loading = this.loadingCtrl.create({
       content: 'Please wait...'
     });loading.present();
@@ -72,55 +71,17 @@ export class HomePage {
       console.log(this.banners);
       // this.metal_cost  = data.metal_cost;
     });
-    this.api.addRate().then((data:any) => {
-      
-      console.log(data);
-      this.metal_cost  = data.metal_cost;
-    }).catch(err=>{
-      console.log(JSON.stringify(err))
-    })
+    
 
-    this.getRates();
   }
 
 
-  getRates(){
-   
-    this.old = this.metals;
-
-    this.api.rates().then((data) => {
-     
-      if(data)
-      this.metals = data;
-    }, (err) => {
-     console.log(err);
-    })
-
-        setTimeout( () => {
-           this.getRates();
-      }, 2000);   
-     
-  }
-  sum(a, b){
-    return parseInt(a) + parseInt(b);
+ 
+  login(){
+    this.navCtrl.push(ProfilePage)
   }
 
-  onPause()
-  {
-    this.modalMy = 1;
-    console.log(this.intervals)
-    clearInterval(this.intervals);
-  
-    console.log("testtest")
-  }
 
-  onResume()
-  {
-    this.modalMy = null;
-  }
-   apps(){
-
-   }
   noti(){
    this.navCtrl.push(AdvmodPage)
   }

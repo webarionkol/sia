@@ -1,0 +1,55 @@
+page-profile {
+
+    .item-input .label-md, .item-select .label-md, .item-datetime .label-md{
+        color:rgb(26, 23, 23) !important;
+    }
+    #sd{
+     
+        padding: 10px;
+  
+        border-top-left-radius: 25px;
+        background-color: #af8531;
+    }
+    #dd{
+        padding: 10px;
+       
+        border-bottom-right-radius: 25px;
+        background-color:  #b39966;
+    }
+   
+        .ion_input{
+            border-bottom: none;
+            box-shadow: none;
+        }
+        .item-md.item-block .item-inner,
+        .item-md.item-input.input-has-focus .item-inner,
+        .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner,
+        .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner,
+        .list-md .item-input.input-has-focus:last-child,
+        .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child,
+        .list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child {
+            border-bottom: none;
+            box-shadow: none;
+        }
+        .list-md .item-input.input-has-focus:last-child .item-inner,
+        .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child .item-inner,
+        .list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child .item-inner {
+            box-shadow: none; 
+        }
+
+        ion-input, ion-textarea {
+            // position: relative;
+            // display: block;
+            // -webkit-box-flex: 1;
+            // -webkit-flex: 1;
+            // -ms-flex: 1;
+            // background-color: lightgray;
+            // padding-left: 2%;
+            // flex: 1;
+            // width: 100%;
+        }
+        .input-wrapper{
+            padding:5px;
+            background-color: lightgray;
+        }
+}
