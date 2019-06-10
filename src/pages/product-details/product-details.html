@@ -18,21 +18,13 @@
 <div class="slide">
     <ion-slides pager>
 
-        <ion-slide >
-            <img src="https://images-eu.ssl-images-amazon.com/images/I/51-tzp5%2BQcL.jpg">
-        </ion-slide>
-      
-        <ion-slide >
-            <img src="https://images-eu.ssl-images-amazon.com/images/I/51-tzp5%2BQcL.jpg">
-        </ion-slide>
-      
-        <ion-slide >
-            <img src="https://images-eu.ssl-images-amazon.com/images/I/51-tzp5%2BQcL.jpg">
+        <ion-slide *ngFor = "let img of productImgs">
+            <img [src]="img.img">
         </ion-slide>
       
       </ion-slides>
 </div>
-           <h3 text-center>Baby Tops</h3>
+           <h3 text-center>{{product.name}}</h3>
 
            <h3 style="margin-left:5px;margin-bottom:0px">Product Details</h3>         
 
@@ -41,35 +33,35 @@
        <p>Product Code</p>
      </ion-col>
      <ion-col col-6 text-right>
-      <p>SIA0098</p>
+      <p>{{product.code}}</p>
     </ion-col>
     <ion-col col-6>
       <p>Gold Weight</p>
     </ion-col>
     <ion-col col-6 text-right>
-     <p>SIA0098</p>
+     <p>{{product.gold_weight}} gm</p>
    </ion-col>
     <ion-col col-6>
       <p>Gross Weight</p>
     </ion-col>
     <ion-col col-6 text-right>
-     <p>SIA0098</p>
+     <p>{{product.gross_weight}} gm</p>
    </ion-col>
 
  
 
- <ion-col col-6>
+ <!-- <ion-col col-6>
   <p>Product Code</p>
 </ion-col>
 <ion-col col-6 text-right>
  <p>SIA0098</p>
-</ion-col>
+</ion-col> -->
 
 <ion-col col-6>
   <p>Made By</p>
 </ion-col>
 <ion-col col-6 text-right>
- <p><u>Subha</u> </p>
+ <p><u>{{product.man}}</u> </p>
 </ion-col>
    </ion-row>        
 
@@ -79,7 +71,7 @@
        <b>MRP</b> 
     </ion-col>
     <ion-col col-6 text-left>
-      &#8377; 4543
+      &#8377; {{product.price}}
   </ion-col>
 </ion-row>
 

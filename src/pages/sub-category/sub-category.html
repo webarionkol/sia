@@ -17,23 +17,28 @@
 
 
     <ion-list>
-      <ion-item  (click)="goToSubcat()">
-          <ion-avatar item-start>
-              <img src="assets/imgs/background1.jpg">
-            </ion-avatar>
-            <h2>Cher</h2>
-            <p>Ugh. As if.</p>
+      <div *ngIf="cats">
+          <ion-item *ngFor="let cat of cats"  (click)="goToSubcat(cat.id, 'Category')">
+              <ion-avatar item-start>
+                  <img [src]="cat.img">
+                </ion-avatar>
+                <h2>{{cat.name}}</h2>
+                <!-- <p>Ugh. As if.</p> -->
+         
+          </ion-item>
+      </div>
      
-      </ion-item>
   
-      <ion-item  (click)="goToSubcat()">
-          <ion-avatar item-start>
-              <img src="assets/imgs/background1.jpg">
-            </ion-avatar>
-            <h2>Cher</h2>
-            <p>Ugh. As if.</p>
-     
-      </ion-item>
+      <div *ngIf="mans">
+          <ion-item *ngFor="let cat of mans"  (click)="goToSubcat(cat.id, 'Manufacturer')">
+              <ion-avatar item-start>
+                  <img [src]="cat.img">
+                </ion-avatar>
+                <h2>{{cat.member_name}}</h2>
+                <!-- <p>Ugh. As if.</p> -->
+         
+          </ion-item>
+      </div>
     
     </ion-list>
   

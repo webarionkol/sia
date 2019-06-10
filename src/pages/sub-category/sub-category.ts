@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { ProductPage } from '../product/product';
+import { ApiProvider } from '../../providers/api/api';
 
 /**
  * Generated class for the SubCategoryPage page.
@@ -16,7 +17,52 @@ import { ProductPage } from '../product/product';
 })
 export class SubCategoryPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  cats: any;
+  mans: any;
+
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams, 
+    public api: ApiProvider,
+    public loadingCtrl:LoadingController) {
+
+    console.log(this.navParams.get('type'));
+
+    if(this.navParams.get('type') === 'Category') {
+      this.getCats();
+    } else {
+      this.getManufacture();
+    }
+
+    
+  }
+
+  private getCats() {
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });loading.present();
+    this.api.getCats().then((data: any)=>{
+      console.log(data);
+      this.cats = data.cats;
+      loading.dismiss();
+    }).catch(err=>{
+      console.log(err);
+      loading.dismiss();
+    });
+  }
+
+  private getManufacture() {
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });loading.present();
+    this.api.getManufacture().then((data: any)=>{
+      console.log(data);
+      this.mans = data.mans;
+      loading.dismiss();
+    }).catch(err=>{
+      console.log(err);
+      loading.dismiss();
+    });
   }
 
   ionViewDidLoad() {
@@ -24,8 +70,8 @@ export class SubCategoryPage {
   }
 
 
-  goToSubcat(){
-   this.navCtrl.push(ProductPage)
+  goToSubcat(id, type){
+   this.navCtrl.push(ProductPage, {data : {id: id, type: type}});
   }
 
 }

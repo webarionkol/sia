@@ -23,19 +23,19 @@
 <div class="textarea">
 
 
-            <ion-input id="space" type="text" placeholder="Your Name"></ion-input>
+            <ion-input id="space" type="text" placeholder="Your Name" [(ngModel)]="data.name"></ion-input>
        
 
-            <ion-input id="space" type="text" placeholder="Your Email"></ion-input>
+            <ion-input id="space" type="text" placeholder="Your Email" [(ngModel)]="data.email"></ion-input>
      
 
           
-            <ion-textarea padding id="spac" type="text" placeholder="Your Message"></ion-textarea>
+            <ion-textarea padding id="spac" type="text" placeholder="Your Message"  [(ngModel)]="data.message"></ion-textarea>
          
         </div>   
         
         <div text-center>
-            <button ion-button color="header" round>Send Message</button>
+            <button ion-button color="header" round (click)="submit()">Send Message</button>
         </div>
 
         <div text-center class="call"> 

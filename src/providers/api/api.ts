@@ -270,4 +270,74 @@ getMarquee(){
       });
   });
 }
+
+getCats()  
+{
+  return new Promise((resolve, reject) => {
+    this.http.get(this.apiUrl+'getCategory')
+      .subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+  });
+}
+
+getManufacture()  
+{
+  return new Promise((resolve, reject) => {
+    this.http.get(this.apiUrl+'getManufacture')
+      .subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+  });
+}
+
+getProducts(data){
+  console.log(data)
+  var formData = new FormData();
+  formData.append('id', data.id);
+  formData.append('type', data.type);
+  return new Promise((resolve, reject) => {
+    this.http.post(this.apiUrl+'getProducts', formData)
+      .subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+  });
+}
+
+
+getProductImgs(id){
+  var formData = new FormData();
+  formData.append('id', id);
+  return new Promise((resolve, reject) => {
+    this.http.post(this.apiUrl+'getProductImgs', formData)
+      .subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+  });
+}
+
+
+setInquiry(data){
+  var formData = new FormData();
+  formData.append('name', data.name);
+  formData.append('email', data.email);
+  formData.append('message', data.message);
+  return new Promise((resolve, reject) => {
+    this.http.post(this.apiUrl+'setInquiry', formData)
+      .subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+  });
+}
+
 }

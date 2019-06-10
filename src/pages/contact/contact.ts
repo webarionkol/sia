@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 import { ApiProvider } from '../../providers/api/api';
 
 /**
@@ -27,7 +27,15 @@ name:any;
 fb:any;
 twit:any;
 email:any;
-  constructor(public rest:ApiProvider,public navCtrl: NavController, public navParams: NavParams) {
+
+data: any = {name: '', email: '', message: ''};
+
+  constructor(
+    public rest:ApiProvider,
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public loadingCtrl:LoadingController,
+    public toast: ToastController) {
     this.rest.getContact().then(data=>{
       console.log(data)
       this.b1call=data['contactus'][1].content_value;
@@ -47,6 +55,25 @@ email:any;
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContactPage');
+  }
+
+  submit() {
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });loading.present();
+    this.rest.setInquiry(this.data).then((data: any)=>{
+      console.log(data);
+     let toast =  this.toast.create({
+        message: data.message,
+        duration: 3000,
+        position: 'top'
+      });
+      toast.present();
+      loading.dismiss();
+    }).catch(err=>{
+      console.log(err);
+      loading.dismiss();
+    });
   }
 
 }

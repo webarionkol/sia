@@ -11,27 +11,15 @@
   </ion-header>
 <ion-content padding>
   
-    <ion-row text-center>
+    <ion-row text-center *ngIf="products">
         
-        <ion-col col-6 (click)="goToProduct()">
-           <img src="https://images-eu.ssl-images-amazon.com/images/I/51-tzp5%2BQcL.jpg">
-            <p>New Set</p>
-        </ion-col>
-        <ion-col col-6 (click)="goToProduct()">
-            <img src="https://images.sg.content-cdn.io/cdn//in-resources/d7048855-742a-406c-a67d-5c2962e69e5e/Images/ProductImages/Source/PRD981_1.jpg;width=500;height=500;scale=canvas;anchor=bottomcenter">
-            <p>Bangel new</p>
-
-        </ion-col>
-        <ion-col col-6 (click)="goToProduct()">
-            <img src="https://images-eu.ssl-images-amazon.com/images/I/41lBUhPDuaL.jpg">
-            <p>Demo</p>
-        </ion-col>
-        <ion-col col-6 >
-              
-                    <img src="https://cdn11.bigcommerce.com/s-ekmdhvvdto/images/stencil/500x659/products/3867/5102/Heart-BR-Orn-AERIAL-fixed__04617.1530122429.jpg?c=2">
-         
-             <p>Free</p>
-        </ion-col>
+                <ion-col *ngFor="let product of products" col-6 (click)="goToProduct(product)">
+                        <img [src]="product.img">
+                         <p>{{product.name}}</p>
+                     </ion-col>
+       
+        
+       
 
 
     </ion-row>

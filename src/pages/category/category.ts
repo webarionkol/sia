@@ -22,7 +22,7 @@ export class CategoryPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CategoryPage');
   }
-  goToSubcat(){
-    this.navCtrl.push(SubCategoryPage)
+  goToSubcat(type){
+    this.navCtrl.push(SubCategoryPage, {type: type});
   }
 }

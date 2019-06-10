@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { ApiProvider } from '../../providers/api/api';
 
 /**
  * Generated class for the ProductDetailsPage page.
@@ -15,7 +16,28 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProductDetailsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  product: any;
+  productImgs: any;
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public api: ApiProvider,
+    public loadingCtrl:LoadingController) {
+
+    console.log(this.navParams.get('product'));
+    this.product = this.navParams.get('product');
+
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });loading.present();
+    this.api.getProductImgs(this.product.id).then((data: any)=>{
+      console.log(data);
+      this.productImgs = data.imgs;
+      loading.dismiss();
+    }).catch(err=>{
+      console.log(err);
+      loading.dismiss();
+    });
   }
 
   ionViewDidLoad() {
