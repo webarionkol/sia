@@ -22,7 +22,8 @@ export class AdvmodPage {
   constructor(public rest:ApiProvider,public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController) {
     
  
-    
+    // use customOrder api to save order 
+    // and use userFiles to upload pic key = img
     
      
    

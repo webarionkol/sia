@@ -198,32 +198,14 @@ export class ApiProvider {
     });
   }
   
-   kyc(data){
+  customOrder(data){
    console.log(data)
   var formData = new FormData();
-  formData.append('company_name', data.companyname);
-  formData.append('client_name', data.clientname);
-  formData.append('address', data.address);
-  formData.append('name1', data.name1);
-  formData.append('name2', data.name2);
-  formData.append('mobile1', data.mobile);
-  formData.append('mobile2', data.mobile2);
-  formData.append('office1', data.office1);
-  formData.append('office2', data.office2);
-  formData.append('email', data.email);
-  formData.append('residence', data.residence);
-  formData.append('bank_name', data.bname);
-  formData.append('gst_no', data.gst_no);
-  formData.append('branch_name', data.Branch);
-  formData.append('account_number', data.acno);
-  formData.append('ifsc_code', data.ifsc);
-  formData.append('tin_no', data.tinno);
-  formData.append('pan_no', data.panno);
-  formData.append('reference', data.Reference);
+  formData.append('message', data.message);
   console.log(data);
  // console.log(formData);
   return new Promise((resolve, reject) => {
-    this.http.post(this.apiUrl+'kyc', formData)
+    this.http.post(this.apiUrl+'customOrder', formData)
       .subscribe(res => {
         resolve(res);
       }, (err) => {
